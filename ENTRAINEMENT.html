@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Messaging App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="login">
+            <h2>Connexion</h2>
+            <input type="text" id="username" placeholder="Nom d'utilisateur">
+            <button id="loginBtn">Se connecter</button>
+        </div>
+        
+        <div id="chat" style="display: none;">
+            <div id="user-info">
+                <span id="user-label"></span>
+                <button id="logoutBtn">Déconnexion</button>
+            </div>
+            <div id="message-section">
+                <div id="messages"></div>
+                <div id="message-form">
+                    <input type="text" id="messageInput" placeholder="Écrire un message">
+                    <button id="sendMessageBtn">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
